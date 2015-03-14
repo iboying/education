@@ -1,0 +1,88 @@
+<%= render partial: "share/topbar"%>
+<div class="container main-content">
+	<!--carousel-->
+	<div class="row" style="margin-bottom:20px;">
+		<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+			<!-- Indicators -->
+			<ol class="carousel-indicators">
+				<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+				<li data-target="#carousel-example-generic" data-slide-to="1"></li>
+				<li data-target="#carousel-example-generic" data-slide-to="2"></li>
+			</ol>
+			<!-- Wrapper for slides -->
+			<div class="carousel-inner" role="listbox">
+				<div class="item active">
+					<%= image_tag "01index_image.png", alt:"1", class:"photo"%>
+				</div>
+			</div>
+		</div>		
+	</div>
+
+	<div class="video-name">
+		<%= image_tag "01index_titleicon.png"%>
+		<span class="num">1</span>
+		<span>网络设备维护</span>
+		<%= link_to "更多>>", "#", class:"more"%>
+	</div>
+
+	<div class="row" style="margin-bottom:20px;">
+		<% (0..2).each do |index|%>
+		<div class="col-md-4 col-sm-6 my-col">
+			<%=image_tag "01index_video1.png",class:"photo"%>
+			<div class="video-info">
+				<div class="video-title">
+					<h4 class="head">网络设备维护&nbsp;第一集</h4>
+					<span class="para">维护的目的是保证设备处于最佳状态，满足业务晕性的需求……</span>
+				</div>
+				<div class="video-status">
+				<span class="glyphicon glyphicon-time"></span>
+				&nbsp;&nbsp;14天前
+				<span class="status-right">
+					<span class="glyphicon glyphicon-eye-open"></span>
+					&nbsp;&nbsp;1496&nbsp;&nbsp;
+					<span class="glyphicon glyphicon-heart"></span>
+					&nbsp;&nbsp;0
+				</span>
+				</div>
+			</div>
+		</div>
+		<% end %>
+	</div>
+
+
+
+	<div class="video-name">
+		<%= image_tag "01index_titleicon.png"%>
+		<span class="num">2</span>
+		<span>网络优化</span>
+		<%= link_to "更多>>", "#", class:"more"%>
+	</div>
+
+	<div class="row"style="margin-bottom:20px;">
+		<% (0..2).each do |index|%>
+		<div class="col-md-4 col-sm-6 my-col">
+			<%=image_tag "01index_video1.png",class:"photo"%>
+			<div class="video-info">
+				<div class="video-title">
+					<h4 class="head">网络设备维护&nbsp;第一集</h4>
+					<span class="para">维护的目的是保证设备处于最佳状态，满足业务晕性的需求……</span>
+				</div>
+				<div class="video-status">
+				<span class="glyphicon glyphicon-time"></span>
+				&nbsp;&nbsp;14天前
+				<span class="status-right">
+					<span class="glyphicon glyphicon-eye-open"></span>
+					&nbsp;&nbsp;1496&nbsp;&nbsp;
+					<span class="glyphicon glyphicon-heart"></span>
+					&nbsp;&nbsp;0
+				</span>
+				</div>
+			</div>
+		</div>
+		<% end %>
+	</div>
+
+</div>
+<%= render partial: "share/footer"%>
+
+

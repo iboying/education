@@ -1,0 +1,41 @@
+@import  "variables";
+.topbar{
+	padding:15px 0px;
+	color: $color-write;
+	background-color: $color-blue;
+	.top-left{
+		padding-top: 20px;
+		.title{
+			float: left;
+			font-size: 30px;
+			line-height: 25px;
+			border-right: 1px solid $color-write;
+			padding-left: 20px;
+		}
+		.info{
+			position: relative;
+			margin-left: 155px; 	
+			font-size: 20px;
+			padding-top: 2px;
+		}
+		.info-icon{
+			position: absolute;
+			left: 180px;
+			bottom: 20px;
+		}
+	}
+	.input-group-addon{
+		background-color: $color-search;
+		color: $color-blue;
+	}
+	.signin{
+		margin-bottom: 10px;
+		a{
+			color: $color-write;
+			text-decoration: none;
+		}
+		a:hover{
+			color: $color-signin;
+		}
+	}
+}
