@@ -2,3 +2,40 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 @import "variables";
+.video{
+	background-color: $color-video;
+	padding: 10px 0;
+	border-bottom: 2px solid $color-video-border;
+	.introduce{
+		padding: 15px;		
+		height: 417px;
+	}
+	.btn-course{
+		text-align: center;
+		margin: 20px 0;
+	}
+}
+.video-list{
+	background-color: $color-write;
+	padding-top: 20px;
+	.list-title{
+		border-bottom:1px solid $color-gray;
+		width: 100%;
+		.rel{
+			width: 120px;
+			font-size: 30px;
+			color: $color-blue;
+			border-bottom: 4px solid $color-blue;
+		}
+	}
+	.list-body{
+		padding: 30px 20px;
+		.list-body{
+			padding: 20px 0;
+			line-height: 100%;
+		}	
+	}
+}
+.dot{
+	border-top: 1px dashed $color-gray;
+}

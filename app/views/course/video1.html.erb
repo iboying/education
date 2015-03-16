@@ -1,2 +1,41 @@
-<h1>Course#video1</h1>
-<p>Find me in app/views/course/video1.html.erb</p>
+<%=render partial: "share/topbar"%>
+<!--content-->
+<div class="container video">
+	<div class="row">
+		<div class="col-md-7 text-center">
+			<%= image_tag "01index_video1.png", class:"photo"%>
+			<button class="btn btn-info btn-lg btn-course" type="submit">
+				<span class="glyphicon glyphicon-play"></span>立即播放
+			</button>
+		</div>
+		<div class="col-md-5">
+			<div class="introduce">
+				<h1 class="text-center">网络设备维护基础&nbsp;&nbsp;第一集</h1>
+				<h3>课程介绍：</h3>
+				<p class="text-justify">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;移动通信网络组成与主要设备介绍。4G通信技术并没有脱离以前的通信技术，而是以传统通信技术为基础，并利用了一些新的通信技术，来不断提高无线通信的网络效率和功能的。4G通信会是一种超高速无线网络，一种不需要电缆的信息超级高速公路，这种新网络可使电话用户以无线及三维空间虚拟实境连线。</p>
+				<h3>讲师：</h3>
+				<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;王天义（大唐移动高级工程师，讲师）</p>
+			</div>
+			<div class="btn-course">
+				<a class="btn btn-info btn-lg" href="#" role="button">本科作业</a>
+				<a class="btn btn-info btn-lg" href="#" role="button">成绩查询</a>
+			</div>
+		</div>
+	</div>
+</div>
+<!--video-list-->
+<div class="container video-list">
+	<div class="list-title">
+		<div class="rel">相关课程</div>
+	</div>
+	<div class="list-body">
+		<h4><span class="glyphicon glyphicon-play-circle"></span>&nbsp;&nbsp;&nbsp;&nbsp;网络设备维护基础&nbsp;&nbsp;&nbsp;&nbsp;第2集</h4>
+		<hr class="dot">
+		<h4><span class="glyphicon glyphicon-play-circle"></span>&nbsp;&nbsp;&nbsp;&nbsp;网络设备维护基础&nbsp;&nbsp;&nbsp;&nbsp;第2集</h4>
+		<hr class="dot">
+		<h4><span class="glyphicon glyphicon-play-circle"></span>&nbsp;&nbsp;&nbsp;&nbsp;网络设备维护基础&nbsp;&nbsp;&nbsp;&nbsp;第2集</h4>
+		<hr class="dot">
+		<h4><span class="glyphicon glyphicon-play-circle"></span>&nbsp;&nbsp;&nbsp;&nbsp;网络设备维护基础&nbsp;&nbsp;&nbsp;&nbsp;第2集</h4>
+	</div>
+</div>
+<%=render partial: "share/footer"%>

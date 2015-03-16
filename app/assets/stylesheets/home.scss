@@ -2,6 +2,9 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 @import "variables";
+.photo{
+	width: 100%;
+}
 .main-content{
 	background-color: $color-write;
 	.video-name{
@@ -22,9 +25,6 @@
 			font-size: 14px;
 			color: $color-blue;
 		}
-	}
-	.photo{
-		width: 100%;
 	}
 	.video-info{
 		height:120px;
