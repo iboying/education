@@ -2,15 +2,22 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 @import "variables";
+@media (min-width: 992px) {
+	.introduce{	
+		height: 342px;
+	}
+}
+@media (min-width: 1200px) {
+	.introduce{
+		height: 417px;
+	}
+}
 .video{
 	background-color: $color-video;
 	padding: 10px 0;
 	border-bottom: 2px solid $color-video-border;
-	.introduce{
-		padding: 15px;		
-		height: 417px;
-	}
 	.btn-course{
+		background-color: $color-blue;
 		text-align: center;
 		margin: 20px 0;
 	}
