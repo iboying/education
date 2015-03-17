@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'signin/index'
+
   get 'course/video1'
 
   get 'course/video2'
