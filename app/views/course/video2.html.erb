@@ -1,2 +1,24 @@
-<h1>Course#video2</h1>
-<p>Find me in app/views/course/video2.html.erb</p>
+<%=render partial: "share/topbar"%>
+<div class="container video">
+	<h3><span class="glyphicon glyphicon-play icon-color"></span>&nbsp;&nbsp;正在播放：网络设备维护基础&nbsp;&nbsp;第一集</h3>
+	<div class="row">
+		<div class="col-md-8">
+			<%= image_tag "video2.png", class:"photo"%>
+		</div>
+		<div class="col-md-4">
+			<div class="knowledge">
+				<div class="k-title">知识点</div>
+				<div class="catalog">
+					<p><span class="glyphicon glyphicon-menu-right icon-color"></span>&nbsp;&nbsp;00:05:00&nbsp;&nbsp; GSM网络结构</p>
+					<p><span class="glyphicon glyphicon-menu-right icon-color"></span>&nbsp;&nbsp;00:20:15&nbsp;&nbsp; TD网络结构</p>
+					<p><span class="glyphicon glyphicon-menu-right icon-color"></span>&nbsp;&nbsp;00:32:15&nbsp;&nbsp; LTE网络结构</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="row text-center">
+		<a class="btn btn-info btn-lg btn-course" href="#" role="button">本科作业</a>
+		<a class="btn btn-info btn-lg btn-course" href="#" role="button">成绩查询</a>
+	</div>
+</div>
+<%=render partial: "share/footer"%>

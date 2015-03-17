@@ -13,9 +13,9 @@
  *= require_tree .
  *= require_self
  */
+ @import  "variables";
  @import "bootstrap-sprockets";
  @import "bootstrap";
- @import  "variables";
  html,body{
  	width: 100%;
  	background-color: $color-gray-bg;

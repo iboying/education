@@ -2,24 +2,29 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 @import "variables";
-@media (min-width: 992px) {
-	.introduce{	
-		height: 342px;
-	}
-}
-@media (min-width: 1200px) {
-	.introduce{
-		height: 417px;
-	}
-}
+//---------------视频1------------------
 .video{
 	background-color: $color-video;
 	padding: 10px 0;
 	border-bottom: 2px solid $color-video-border;
 	.btn-course{
+		border: none;
+		border-radius: 0;
+		padding: 15px 40px;
+		font-size: 24px;
 		background-color: $color-blue;
-		text-align: center;
 		margin: 20px 0;
+	}
+	.introduce{
+		@media (min-width: 992px) {
+			height: 327px;
+		}
+		@media (min-width: 1200px) {
+			height: 402px;
+		}
+		@media (max-width: 992px) {
+			height: auto;
+		}
 	}
 }
 .video-list{
@@ -45,4 +50,32 @@
 }
 .dot{
 	border-top: 1px dashed $color-gray;
+}
+//-----------视频2------------
+.knowledge{
+	border: 1px solid $color-gray;
+	background-color: $color-write;
+	@media (min-width: 992px) {
+		height: 420px;
+	}
+	@media (min-width: 1200px) {
+		height: 509px;
+	}
+	@media (max-width: 992px) {
+		height: auto;
+	}
+	height: 505px;
+	.k-title{
+		background-color: $color-blue;
+		text-align: center;
+		color: $color-write;
+		font-size: 24px;
+		padding: 10px 0;
+	}
+	.catalog{
+		padding: 20px;
+	}
+}
+.icon-color{
+	color: $color-blue;
 }
