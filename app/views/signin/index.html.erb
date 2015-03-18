@@ -1,11 +1,50 @@
-<div class="wrap">
-	<div class="sectionOne" style="min-height:79px;">
-		<%= render partial:"share/topbar"%>
+<div class="vbox">
+	<%= render partial:"share/topbar"%>
+
+	<div class="flex-box vbox signin-body">
+		<div class="flex-box"></div>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-5 col-md-offset-7">
+					<div class="signin-main">
+						<div role="tabpanel">
+							<!-- Nav tabs -->
+							<ul class="nav nav-tabs" role="tablist">
+								<li role="presentation" class="active"><a href="#signin" role="tab" data-toggle="tab">登录</a></li>
+								<li role="presentation"><a href="#signup" role="tab" data-toggle="tab">注册</a></li>
+							</ul>
+							<!-- Tab panes -->
+							<div class="tab-content">
+								<!--登录-->
+								<div role="tabpanel" class="tab-pane sign-area active" id="signin">
+									<form>
+										<div class="form-group">
+											<input type="email" class="form-control" id="exampleInputEmail1" placeholder="输入用户名">
+										</div>
+										<div class="form-group">
+											<input type="password" class="form-control" id="exampleInputPassword1" placeholder="输入密码">
+										</div>
+										<div class="checkbox">
+											<label>
+												<input type="checkbox"> 下次自动登录
+											</label>
+											<%= link_to "忘记密码？", "#", class:"forget"%>
+										</div>
+										<div class="text-center">
+											<button type="submit" class="btn btn-info btn-sign">登录</button>
+										</div>
+									</form>
+								</div>
+								<!--注册-->
+								<div role="tabpanel" class="tab-pane sign-area" id="signup"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="flex-box"></div>
 	</div>
 
-	<div class="sectionOne"></div>
-
-	<div class="sectionThree" style="min-height:88px;">
-		<%= render partial:"share/footer"%>
-	</div>
+	<%= render partial:"share/footer"%>
 </div>
