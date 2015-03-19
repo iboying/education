@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'test/demand'
+
   get 'test/index'
 
   get 'test/result'
