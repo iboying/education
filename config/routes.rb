@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+  get 'teacher/test'
+
+  get 'teacher/result'
+
   get 'test/demand'
 
   get 'test/index'
