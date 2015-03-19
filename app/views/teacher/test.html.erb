@@ -1,2 +1,43 @@
-<h1>Teacher#test</h1>
-<p>Find me in app/views/teacher/test.html.erb</p>
+<%= render partial: "share/topbar"%>
+<!--test_background-->
+<div class="demand-bg make-center">
+	<div class="test-title text-center">
+		<h1>成绩查询</h1>
+	</div>	
+</div>
+<!--demand-->
+<div class="container video-list">
+	<!--lessons-->
+	<div class="list-title">
+		<div class="rel">&nbsp;&nbsp;课&nbsp;&nbsp;程&nbsp;&nbsp;</div>
+	</div>
+	<div class="list-body">
+		<% (0..3).each do |lesson_index|%>
+		<div class="checkbox">
+			<h4><label><input type="checkbox" value="">网络设备维护基础（2）</label></h4>
+		</div>
+		<hr class="dot">
+		<% end %>
+	</div>
+	<!--classes-->
+	<div class="list-title">
+		<div class="rel">&nbsp;&nbsp;班&nbsp;&nbsp;级&nbsp;&nbsp;</div>
+	</div>
+	<div class="list-body">
+		<% (0..3).each do |class_index|%>
+		<div class="checkbox">
+			<h4><label><input type="checkbox" value="">2012级计算机（2）班</label></h4>
+		</div>
+		<hr class="dot">
+		<% end %>
+	</div>
+	<div class="text-center">
+		<button type="submit" class="btn btn-info btn-course">查 询</button>
+	</div>
+</div>
+<!--footer-->
+<div class="container">
+	<div class="row">
+		<%= render partial: "share/footer"%>
+	</div>
+</div>

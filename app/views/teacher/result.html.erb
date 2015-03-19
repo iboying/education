@@ -1,2 +1,87 @@
-<h1>Teacher#result</h1>
-<p>Find me in app/views/teacher/result.html.erb</p>
+<%= render partial: "share/topbar"%>
+<!--成绩分布-->
+<div class="container video-list main-content">
+	<!--lessons-->
+	<div class="list-title text-center">
+		<span class="rel teacher-title">网络设备维护基础（2）成绩分布</span>
+	</div>
+
+	<div class="list-body">
+		<!--学生成绩排名-->
+		<div class="video-name">
+			<%= image_tag "01index_titleicon.png"%>
+			<span class="num">1</span>
+			<span>学生设备维护</span>
+		</div>
+		<!--table-->
+		<div class="table-responsive">
+			<table class="table table-striped table-bordered">
+			  	<thead class="thead-bgc">
+			  		<tr>
+			  			<th>学号</th>
+			  			<th>姓名</th>
+			  			<th>成绩</th>
+			  			<% (1..10).each do |h_index|%>
+			  			<th>题<%= h_index%></th>
+			  			<% end %>
+			  		</tr>
+			  	</thead>
+			  	<tbody>
+			  		<% (1..10).each do |r_index|%>
+			  		<tr>
+			  			<th>20120018</th>
+			  			<th>李静</th>
+			  			<th>90</th>
+			  			<% (1..10).each do |h_index|%>
+			  			<th><%= h_index%></th>
+			  			<% end %>
+			  		</tr>
+			  		<% end %>
+			  	</tbody>
+			</table>			
+		</div>
+
+		<!--选项分布表-->
+		<div class="video-name">
+			<%= image_tag "01index_titleicon.png"%>
+			<span class="num">2</span>
+			<span>选项分布表</span>
+		</div>
+		<!--table-->
+		<div class="table-responsive">
+			<table class="table table-striped table-bordered">
+			  	<thead class="thead-bgc">
+			  		<tr>
+			  			<th>
+			  				<span style="float:right;">题目</span><br>
+			  				<span style="float:left;">统计项</span>
+			  			</th>
+			  			<% (1..10).each do |h_index|%>
+			  			<th>题<%= h_index%></th>
+			  			<% end %>
+			  		</tr>
+			  	</thead>
+			  	<tbody>
+			  		<% (1..7).each do |r_index|%>
+			  		<tr>
+			  			<th><%= @static_item["#{r_index}"]%></th>
+			  			<% (1..10).each do |h_index|%>
+			  			<th><%= h_index%></th>
+			  			<% end %>
+			  		</tr>
+			  		<% end %>
+			  	</tbody>
+			</table>
+		</div>
+		<!--导出-->
+		<div class="text-right">
+			<button type="submit" class="btn btn-info btn-sign">导出为EXCEL</button>
+		</div>
+	</div>
+</div>
+<!--footer-->
+<div class="container">
+	<div class="row">
+		<%=render partial: "share/footer"%>
+	</div>
+</div>
