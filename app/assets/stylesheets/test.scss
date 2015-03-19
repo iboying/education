@@ -1,3 +1,50 @@
 // Place all the styles related to the test controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+@import "variables";
+@import "signin";
+.make-center{
+	display: flex;
+       justify-content:center;
+      	align-items:center;
+}
+.test-bg{
+	background: url(/assets/04test.png) no-repeat;
+	background-size: 100% 100%;
+	min-height: 271px;
+	.test-title{
+		width: 100%;
+		color: $color-write;
+		background-color: rgba(0,0,0,0.3);
+	}
+}
+.demand{
+	float: right;
+	a{
+		color: $color-blue;
+	}
+}
+.test-problem{
+	padding: 10px 0;
+	border-top: 1px solid $color-gray;
+	border-bottom: 1px solid $color-gray;
+	background-color: $color-video;
+}
+.result-title{
+	background-color: $color-blue;
+	color: $color-write;
+	font-size: 24px;
+	padding: 5px 0;
+}
+.result-body{
+	padding: 30px 0 80px 0;
+	background-color: $color-video;
+	.test-icon{
+		margin-bottom:30px;
+		line-height:100%;
+		font-size:26px;
+	}
+	.scoal{
+		color: $color-red;
+	}	
+}

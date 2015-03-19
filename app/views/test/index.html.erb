@@ -1,7 +1,59 @@
 <%= render partial: "share/topbar"%>
-
-<div class="test">
-	
+<%= render partial:"test_bg"%>
+<div class="container video-list">
+	<div class="list-title">
+		<div class="row">
+			<div class="col-xs-6">
+				<div class="rel">题目列表</div>
+			</div>
+			<div class="col-xs-6">
+				<div class="demand">
+					<h4><%= link_to "成绩查询>>", "#"%></h4>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="list-body">
+		<% (0..3).each do |index|%>
+		<h4 class="test-problem">第一题：下列设备，只能作为接入的输入设备的是</h4>
+		<div class="radio">
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<label>
+				<input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+				A . CON
+			</label>
+		</div>
+		<div class="radio">
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<label>
+				<input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+				A . CON
+			</label>
+		</div>
+		<div class="radio">
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<label>
+				<input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+				A . CON
+			</label>
+		</div>
+		<div class="radio">
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<label>
+				<input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+				A . CON
+			</label>
+		</div>
+		<% end %>
+		<div class="text-center">
+			<button type="submit" class="btn btn-info btn-sign">提交</button>
+		</div>
+</div>
+</div>
+<!--footer-->
+<div class="container">
+	<div class="row">
+		<%= render partial: "share/footer"%>
+	</div>
 </div>
 
-<%= render partial: "share/footer"%>

@@ -1,2 +1,26 @@
-<h1>Test#result</h1>
-<p>Find me in app/views/test/result.html.erb</p>
+<%= render partial: "share/topbar"%>
+<%= render partial:"test_bg"%>
+<div class="container video-list">
+	<div class="row">
+		<div class="col-xs-12 col-md-8 col-md-offset-2">
+			<div class="result-title text-center">成 绩</div>
+			<div class="result-body text-center">
+				<div class="test-icon">
+					<%= image_tag "04test_result_cry.png"%>
+					<span>&nbsp;&nbsp;该好好复习了！</span>
+				</div>
+				<h4>你此次测试的成绩：<span class="scoal">55</span>分</h4>
+				<h4>总分：100&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h4>
+			</div>
+		</div>
+	</div>
+	<div class="text-center">
+		<a class="btn btn-info btn-course" href="#" role="button">返 回</a>
+	</div>
+</div>
+<!--footer-->
+<div class="container">
+	<div class="row">
+		<%= render partial: "share/footer"%>
+	</div>
+</div>
