@@ -12,6 +12,8 @@
  *
  *= require_tree .
  *= require_self
+ *= require mediaelement_rails
+ *= require mediaelement_rails/mejs-skins
  */
  @import  "variables";
  @import "bootstrap-sprockets";
@@ -24,10 +26,10 @@
 .btn-course{
 	border: none;
 	border-radius: 0;
-	padding: 15px 60px;
+	padding: 10px 40px;
 	font-size: 24px;
 	background-color: $color-blue;
-	margin: 20px 0;
+	margin: 20px 0 10px 0;
 }
 .btn-sign{
 	border: none;

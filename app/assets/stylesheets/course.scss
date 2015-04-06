@@ -2,21 +2,18 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 @import "variables";
-//---------------视频1------------------
+//---------------video1------------------
 .video{
 	background-color: $color-video;
 	padding: 10px 0;
 	border-bottom: 2px solid $color-video-border;
 	.introduce{
-		margin-bottom: 10px;
+		padding: 0 15px;
 		@media (min-width: 992px) {
-			height: 327px;
+			height: 402px;
 		}
 		@media (min-width: 1200px) {
 			height: 402px;
-		}
-		@media (max-width: 992px) {
-			height: auto;
 		}
 	}
 }
@@ -40,20 +37,16 @@
 .dot{
 	border-top: 1px dashed $color-gray;
 }
-//-----------视频2------------
+//-----------video2------------
 .knowledge{
 	border: 1px solid $color-gray;
 	background-color: $color-write;
 	@media (min-width: 992px) {
-		height: 420px;
+		height: 509px;
 	}
 	@media (min-width: 1200px) {
 		height: 509px;
 	}
-	@media (max-width: 992px) {
-		height: auto;
-	}
-	height: 505px;
 	.k-title{
 		background-color: $color-blue;
 		text-align: center;
