@@ -8,10 +8,17 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-
+<!--navbar-->
 <%= render partial:"share/topbar"%>
 
 <%= yield %>
+
+<!--footer-->
+<div class="<%= "container" if params[:controller] != "signin" %>">
+	<div class="row">
+		<%= render partial: "share/footer"%>
+	</div>
+</div>
 
 </body>
 </html>
