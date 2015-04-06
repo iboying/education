@@ -14,7 +14,7 @@
 			</div>
 			<div class="col-xs-6">
 				<div class="demand">
-					<h4><%= link_to "成绩查询>>", test_result_path%></h4>
+					<h4><%= link_to "成绩查询>>", test_demand_path%></h4>
 				</div>
 			</div>
 		</div>
@@ -52,7 +52,8 @@
 		</div>
 		<% end %>
 		<div class="text-center">
-			<button type="submit" class="btn btn-info btn-sign">提交</button>
+			<!-- <button type="submit" class="btn btn-info btn-sign">提交</button> -->
+			<%= button_to "提交", test_result_path, class: "btn btn-info btn-sign", method: :get %>
 		</div>
 	</div>
 </div>
