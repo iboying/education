@@ -9,12 +9,6 @@
 	border-bottom: 2px solid $color-video-border;
 	.introduce{
 		padding: 0 15px;
-		@media (min-width: 992px) {
-			height: 402px;
-		}
-		@media (min-width: 1200px) {
-			height: 402px;
-		}
 	}
 }
 .video-list{

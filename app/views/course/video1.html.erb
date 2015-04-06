@@ -7,10 +7,6 @@
 				<source type="video/webm" src="myvideo.webm" />
 				<source type="video/ogg" src="myvideo.ogv" />
 			</video>
-
-			<button class="btn btn-info btn-lg btn-course" type="submit">
-				<span class="glyphicon glyphicon-play"></span>立即播放
-			</button>
 		</div>
 		<div class="col-md-5">
 			<div class="introduce">
@@ -20,11 +16,12 @@
 				<h3>讲师：</h3>
 				<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;王天义（大唐移动高级工程师，讲师）</p>
 			</div>
-			<div class="text-center">
-				<%= link_to "本科作业", test_index_path, class: "btn btn-info btn-course", role: "button" %>
-				<%= link_to "成绩查询", test_demand_path, class: "btn btn-info btn-course", role: "button" %>
-			</div>
 		</div>
+	</div>
+	<div class="text-center">
+		<%= link_to "本科作业", test_index_path, class: "btn btn-info btn-course", role: "button" %>
+		<span>&nbsp;</span>
+		<%= link_to "成绩查询", test_demand_path, class: "btn btn-info btn-course", role: "button" %>
 	</div>
 </div>
 <!--video-list-->
