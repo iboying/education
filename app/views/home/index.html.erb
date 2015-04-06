@@ -27,7 +27,9 @@
 	<div class="row" style="margin-bottom:20px;">
 		<% (0..2).each do |index|%>
 			<div class="col-md-4 col-sm-6 my-col">
-				<%=image_tag "01index_video1.png",class:"photo"%>
+				<%= link_to course_video1_path do %>
+					<%=image_tag "01index_video1.png",class:"photo"%>
+				<% end %>
 				<div class="video-info">
 					<div class="video-title">
 						<h4 class="head">网络设备维护&nbsp;第一集</h4>
@@ -42,7 +44,6 @@
 						<span class="glyphicon glyphicon-heart"></span>
 						&nbsp;&nbsp;0
 					</span>
-					</div>
 				</div>
 			</div>
 		<% end %>
@@ -58,11 +59,13 @@
 	<div class="row"style="margin-bottom:20px;">
 		<% (0..2).each do |index|%>
 			<div class="col-md-4 col-sm-6 my-col">
-				<%=image_tag "01index_video1.png",class:"photo"%>
+				<%= link_to course_video2_path do %>
+					<%=image_tag "video2.png",class:"photo"%>
+				<% end %>
 				<div class="video-info">
 					<div class="video-title">
 						<h4 class="head">网络设备维护&nbsp;第一集</h4>
-						<span class="para">维护的目的是保证设备处于最佳状态，满足业务晕性的需求……</span>
+						<span class="para">维护的目的是保证设备处于最佳状态，满足业务的需求……</span>
 					</div>
 					<div class="video-status">
 					<span class="glyphicon glyphicon-time"></span>
@@ -73,7 +76,6 @@
 						<span class="glyphicon glyphicon-heart"></span>
 						&nbsp;&nbsp;0
 					</span>
-					</div>
 				</div>
 			</div>
 		<% end %>
