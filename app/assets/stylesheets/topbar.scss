@@ -9,6 +9,10 @@
 		border-right: 1px solid $color-write;
 		padding-left: 20px;
 		margin-top: 15px;
+		a {
+			color: $color-write;
+			text-decoration: none;
+		}
 	}
 	.info{
 		font-size: 20px;
