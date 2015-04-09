@@ -1,31 +1,20 @@
 @import  "variables";
 .topbar{
-	padding:10px 0px;
-	color: $color-write;
-	background-color: $color-blue;
+	margin-bottom: 5px !important;
 	.title{
-		font-size: 30px;
-		line-height: 25px;
-		border-right: 1px solid $color-write;
-		padding-left: 20px;
-		margin-top: 15px;
-		a {
-			color: $color-write;
-			text-decoration: none;
-		}
+		font-weight: 600;
+		font-size: 35px;
 	}
 	.info{
+		color: $color-write;
+		padding:0 0 0 10px; 
 		font-size: 20px;
-		line-height: 100%;
-		padding-left: 5px;
-		.info-icon{
-			padding-left: 180px;
-		}
 	}
 	.input-group-addon{
 		background-color: $color-search;
 		color: $color-blue;
 	}
+
 	.top-right{
 		text-align: right;
 		padding-right: 20px;

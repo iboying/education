@@ -11,8 +11,12 @@ $color-red:red;
 
 //grid padding
 $grid-gutter-width:10px;
+
+//navbar
 $navbar-height: 80px;
 $navbar-default-bg: $color-blue;
 $navbar-border-radius:none;
-$navbar-default-color:$color-write;
+$navbar-default-color: $color-write;
 $navbar-default-link-color:$color-write;
+$nav-link-padding: 0px 5px;
+$navbar-default-link-hover-color:$color-signin;

@@ -14,7 +14,7 @@
 <%= yield %>
 
 <!--footer-->
-<div class="<%= "container" if params[:controller] != "signin" %>">
+<div class="<%= "container" if params[:controller] != "signin"&& params[:controller] != "home" %>">
 	<div class="row">
 		<%= render partial: "share/footer"%>
 	</div>
