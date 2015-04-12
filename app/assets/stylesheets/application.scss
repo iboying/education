@@ -23,18 +23,25 @@
  	height: 100%;
  	background-color: $color-gray-bg;
  }
+ .btn{
+ 	border-radius: 0;
+ }
 .btn-course{
 	border: none;
-	border-radius: 0;
 	padding: 10px 40px;
 	font-size: 24px;
 	background-color: $color-blue;
 	margin: 20px 0 10px 0;
 }
 .btn-sign{
+	margin-top: 15px;
 	border: none;
-	border-radius: 0;
 	background-color: $color-blue;
 	font-size: 18px;
-	padding: 15px 80px;
+	padding: 10px 60px;
+}
+//write row between
+.write-row{
+	background-color: $color-write;
+	height: 5px;
 }

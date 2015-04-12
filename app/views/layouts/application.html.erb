@@ -1,22 +1,26 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Education</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  <%= csrf_meta_tags %>
+	<title>Education</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+	<%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+	<%= csrf_meta_tags %>
 </head>
 <body>
-<!--navbar-->
-<%= render partial:"share/topbar"%>
 
-<%= yield %>
+<!--in order to display signin page better -->
+<div class="<%= "vbox" if params[:controller] == "signin"%>">
+	<!--navbar-->
+	<%= render partial:"share/topbar"%>
 
+	<%= yield %>	
+</div>
 <!--footer-->
-<div class="<%= "container" if params[:controller] != "signin"&& params[:controller] != "home" %>">
-	<div class="row">
-		<%= render partial: "share/footer"%>
+<div class="<%= "container" if params[:controller] != "signin"%>">
+	<div class="<%= "row" if params[:controller] != "signin"%>">
+		<div class="write-row"></div>
+		<%= render partial: "share/footer"%>		
 	</div>
 </div>
 

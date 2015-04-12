@@ -1,10 +1,4 @@
-<!--test_background-->
-<div class="test-bg make-center">
-	<div class="test-title text-center">
-		<h1>网络设备维护基础（一）测试</h1>
-		<h4>单选题（不计时）</h4>
-	</div>	
-</div>
+<%= render partial:"test/title_image" %>
 <!--test_body-->
 <div class="container video-list">
 	<div class="list-title">
@@ -21,35 +15,16 @@
 	</div>
 	<div class="list-body">
 		<% (0..3).each do |index|%>
-		<h4 class="test-problem">第一题：下列设备，只能作为接入的输入设备的是</h4>
-		<div class="radio">
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-			<label>
-				<input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
-				A . CON
-			</label>
-		</div>
-		<div class="radio">
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-			<label>
-				<input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
-				A . CON
-			</label>
-		</div>
-		<div class="radio">
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-			<label>
-				<input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
-				A . CON
-			</label>
-		</div>
-		<div class="radio">
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-			<label>
-				<input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
-				A . CON
-			</label>
-		</div>
+			<p class="test-problem">&nbsp;&nbsp;第一题：下列设备，只能作为接入的输入设备的是</p>
+			<% (0..3).each do |i|%>
+				<div class="radio">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					<label>
+						<input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+						A . CON
+					</label>
+				</div>
+			<% end %>
 		<% end %>
 		<div class="text-center">
 			<!-- <button type="submit" class="btn btn-info btn-sign">提交</button> -->

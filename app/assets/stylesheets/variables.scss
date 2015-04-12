@@ -7,16 +7,22 @@ $color-signin: #269abc;
 $color-gray-p: #838383;
 $color-video:#f2fdff;
 $color-video-border:#dfedf0;
+$color-black:#000;
 $color-red:red;
 
-//grid padding
-$grid-gutter-width:10px;
-
 //navbar
-$navbar-height: 80px;
+$navbar-height: 95px;
 $navbar-default-bg: $color-blue;
 $navbar-border-radius:none;
-$navbar-default-color: $color-write;
 $navbar-default-link-color:$color-write;
-$nav-link-padding: 0px 5px;
-$navbar-default-link-hover-color:$color-signin;
+
+//form
+$input-border-radius: none;	
+$navbar-default-toggle-border-color:$color-write;
+
+//button
+$btn-info-bg:$color-search;
+
+//tabs
+$nav-tabs-border-color:transparent;
+$nav-tabs-link-hover-border-color:transparent;
